@@ -1073,8 +1073,8 @@ int main( int argc, char** argv)
    ctx.registry= registry;
    ctx.planeX= 0;
    ctx.planeY= 0;
-   ctx.planeWidth= 1280;
-   ctx.planeHeight= 720;
+   ctx.planeWidth= 760;
+   ctx.planeHeight= 550;
    wl_registry_add_listener(registry, &registryListener, &ctx);
    
    wl_display_roundtrip(ctx.display);

@@ -118,10 +118,10 @@ static void pointerMotion( void *, int, int )
 
 static void pointerButtonPressed( void *, int button, int x, int y )
 {
-   int thx0= gDisplayWidth * 160/1280;
+   int thx0= gDisplayWidth * 160/760;
    int thx1= thx0 + 320;
    int thx2= thx1 + 320;
-   int thy0= gDisplayHeight * 90/720;
+   int thy0= gDisplayHeight * 90/550;
    int thy1= thy0 + 180;
    int thy2= thy1 + 180;
 

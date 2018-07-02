@@ -459,8 +459,8 @@ gst_westeros_sink_init(GstWesterosSink *sink, GstWesterosSinkClass *gclass)
 
    sink->windowX= DEFAULT_WINDOW_X;
    sink->windowY= DEFAULT_WINDOW_Y;
-   sink->windowWidth= DEFAULT_WINDOW_WIDTH;
-   sink->windowHeight= DEFAULT_WINDOW_HEIGHT;
+   sink->windowWidth= 760;
+   sink->windowHeight= 550;
    sink->windowChange= false;
    sink->windowSizeOverride= false;
    
@@ -476,8 +476,8 @@ gst_westeros_sink_init(GstWesterosSink *sink, GstWesterosSinkClass *gclass)
    sink->scaleXDenom= 1;
    sink->scaleYNum= 1;
    sink->scaleYDenom= 1;
-   sink->outputWidth= DEFAULT_WINDOW_WIDTH;
-   sink->outputHeight= DEFAULT_WINDOW_HEIGHT;
+   sink->outputWidth= 760;
+   sink->outputHeight= 550;
    
    sink->eosEventSeen= FALSE;
    sink->eosDetected= FALSE;

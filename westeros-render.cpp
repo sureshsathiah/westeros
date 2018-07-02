@@ -27,8 +27,8 @@
 #include "westeros-nested.h"
 #include "westeros-render.h"
 
-#define DEFAULT_OUTPUT_WIDTH (1280)
-#define DEFAULT_OUTPUT_HEIGHT (720)
+#define DEFAULT_OUTPUT_WIDTH (760)
+#define DEFAULT_OUTPUT_HEIGHT (550)
 
 #define WESTEROS_UNUSED(x) ((void)(x))
 
