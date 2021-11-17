@@ -481,7 +481,7 @@ gboolean gst_westeros_sink_soc_init( GstWesterosSink *sink )
    sink->soc.numDropped= 0;
    sink->soc.currentInputPTS= 0;
    sink->soc.haveHardware= FALSE;
-   sink->soc.allow4kZoom= FALSE;
+   sink->soc.allow4kZoom= TRUE;
 
    sink->soc.updateSession= FALSE;
    sink->soc.syncType= -1;
@@ -576,10 +576,10 @@ gboolean gst_westeros_sink_soc_init( GstWesterosSink *sink )
       printf("westeros-sink: capture only\n");
    }
 
-   if ( getenv("WESTEROS_SINK_ALLOW_4K_ZOOM") )
+   if ( getenv("WESTEROS_SINK_DISABLE_4K_ZOOM") )
    {
-      sink->soc.allow4kZoom= TRUE;
-      printf("westeros-sink: allow 4k zoom\n");
+      sink->soc.allow4kZoom= FALSE;
+      printf("westeros-sink: disable 4k zoom\n");
    }
 
    #ifdef USE_AMLOGIC_MESON_MSYNC
